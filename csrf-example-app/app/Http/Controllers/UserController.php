@@ -15,6 +15,5 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->save();
         Session::flash('message', 'Name updated!');
-        return back();
     }
 }
